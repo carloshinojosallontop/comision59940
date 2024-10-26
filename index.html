@@ -10,71 +10,78 @@
 </head>
 
 <body>
-    <header class="main-background">
-        <div class="container">
-            <!-- logo -->
-            <a href="./index.html">
-                <h1>CODER</h1>
-            </a>
+    <header class="header">
 
-            <!-- menu -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./pages/products.html">Productos</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="./pages/about.html">Nosotros</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="./pages/contact.html">Contáctanos</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="./pages/stores.html">Tiendas</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header__container container">
 
-            <!-- search box -->
-            <div class="search">
-                <form action="#" method="get">
-                    <input type="search" placeholder="Buscar..." name="search">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+            <!-- left header -->
+            <div class="header__container--left">
+
+                <!-- logo -->
+                <div class="header__logo">
+                    <a href="./index.html">
+                        <h1>CODER</h1>
+                    </a>
+                </div>
+
+                <!-- nav menu -->
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="./pages/products.html">Productos</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="./pages/about.html">Nosotros</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="./pages/contact.html">Contáctanos</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="./pages/stores.html">Tiendas</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
 
+            <!-- right header -->
+            <div class="header__container--rigth">
 
-            <!-- icons -->
-            <div>
-                <div>
+                <!-- search box -->
+                <form class="header__search" action="#" method="get">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Buscar..." name="search">
+                </form>
+
+                <!-- icons -->
+                <div class="header__icons">
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </a>
-                </div>
-                <div>
                     <a href="#">
                         <i class="fa-regular fa-user icon"></i>
                     </a>
-                </div>
-                <div>
                     <a href="#">
-                        <i class="fa-solid fa-bag-shopping icon"></i>
+                        <i class="fa-solid fa-cart-shopping icon"></i>
                     </a>
                 </div>
+
             </div>
+
         </div>
 
     </header>
 
     <main class="container">
+
         <!-- carousel -->
         <section class="carousel">
-                <h3>La mas amplia variedad de Notebooks</h3>
-                <button>Ver mas</button>
+            <h3>La mas amplia variedad de Notebooks</h3>
+            <button>Ver mas</button>
         </section>
 
         <!-- featured products -->
@@ -109,7 +116,7 @@
             <h2 class="title">Categorias Principales</h2>
             <div>
                 <h4>camaras</h4>
-                <img src="./img/category-pic1.jpg" alt="camaras"  class="category-image">
+                <img src="./img/category-pic1.jpg" alt="camaras" class="category-image">
             </div>
             <div>
                 <h4>celulares</h4>
@@ -123,7 +130,6 @@
                 <h4>Videojuegos</h4>
                 <img src="./img/category-pic4.jpg" alt="videojuegos" class="category-image">
             </div>
-
         </section>
 
         <!-- featured brands -->
@@ -135,11 +141,11 @@
             <img src="./img/lenovo-logo.png" alt="lenovo" class="brand-image">
             <img src="./img/hp-logo.png" alt="hp" class="brand-image">
         </section>
+
     </main>
 
     <!-- footer -->
-
-    <footer class="main-background">
+    <footer class="footer">
         <p class="text-footer">CODER - Todos los derechos reservados 2024</p>
     </footer>
 </body>
