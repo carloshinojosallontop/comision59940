@@ -40,13 +40,19 @@ li {
   list-style: none;
 }
 
+.icon {
+  font-size: 1.75rem;
+  margin: 0 10px 0 10px;
+}
+
 .title {
-  text-align: center; /*corregir nombre de clase */
+  text-align: center;
+  /*corregir nombre de clase */
 }
 
 /* Header */
 
-.header {    
+.header {
   background-color: var(--primary-bg-color);
 }
 
@@ -59,64 +65,154 @@ li {
   height: 5.3125rem;
   display: flex;
   justify-content: space-between;
-
-}
-
-.header__container--left {
-  font-weight: 700;
-  display: flex;
   align-items: center;
+  font-weight: 700;
   gap: 4rem;
 }
 
-.header__container a, 
+.header__container a,
 .header__container i {
   color: #FFFFFF;
 }
 
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo i {
+  display: none;
+  margin-right: 1.25rem;
+}
+
 .header__nav ul {
   display: flex;
+  align-items: center;
   gap: 1.875rem;
 }
 
-.header__container--rigth {
+.header__nav a {
   display: flex;
   align-items: center;
-  gap: 1.5625rem;
 }
 
-.header__search {  
+.header__nav a i {
+  margin-left: 0.5rem;
+}
+
+.header-rigth {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.5625rem;
+  width: 35%;
+}
+
+.header__search {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 5px;
-  height: 2.5rem; 
-  width: 21.25rem;
+  padding: 0 10px;
+  height: 2.5rem;
+  flex-grow: 1;
+  max-width: 21.875rem;
+  min-width: 12.5rem;
   background-color: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header__search i {
   color: #747474;
-  margin: 0 5px 0 5px;
+  margin-right: 5px;
 }
 
 .header__search input {
   border: none;
   outline: none;
-  flex-grow: 1;
+  width: 100%;
   font-size: .875rem;
 }
 
+.header__icons {
+  display: flex;
+  align-content: center;
+}
+
 .header__icons a:nth-child(1) {
-  display: none;  
+  display: none;
 }
 
-.icon {
-  font-size: 1.75rem;
-  margin: 0 8px 0 8px;
+@media (max-width: 1240px) {
+
+  .header__search {
+    display: none;
+  }
+
+  .header__icons a:nth-child(1) {
+    display: inline;
+  }
+
+  .header-rigth {
+    width: auto;
+  }
+  .header__container {
+    height: 4.6875rem;
+  }
 }
 
-  
+@media (max-width: 992px) {
+
+  body {
+    font-size: .875rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .header__nav ul {
+    gap: .9375rem;
+  }
+
+  .header__container {
+    gap: 1.875rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .header__nav {
+    display: none;
+  }
+  .header__logo i {
+    display: inline;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: .875rem;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .header__container {
+    height: 4.0625rem;
+  }
+}
+
+
 /* Carousel */
 
 .carousel {
