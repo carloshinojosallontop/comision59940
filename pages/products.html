@@ -10,62 +10,64 @@
 </head>
 
 <body>
-    <header class="main-background">
-        <div class="container">
-            <!-- logo -->
-            <a href="../index.html">
-                <h1>CODER</h1>
-            </a>
+    <header class="header">
 
-            <!-- menu -->
-            <nav>
+        <div class="header__container container">
+
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="">
+                    <i class="fa-solid fa-bars icon"></i>
+                </a>
+                <a href="../index.html">
+                    <h1>CODER</h1>
+                </a>
+            </div>
+
+            <!-- nav menu -->
+            <nav class="header__nav">
                 <ul>
                     <li>
-                        <a href="./products.html">Productos</a>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <a href="../pages/products.html">Productos<i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li>
-                        <a href="./about.html">Nosotros</a>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <a href="../pages/about.html">Nosotros<i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li>
-                        <a href="./contact.html">Contáctanos</a>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <a href="../pages/contact.html">Contáctanos<i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li>
-                        <a href="./stores.html">Tiendas</a>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <a href="../pages/stores.html">Tiendas<i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                 </ul>
             </nav>
 
-            <!-- search box -->
-            <div class="search">
-                <form action="#" method="get">
+            <!-- header right -->
+            <div class="header-rigth">
+
+                <!-- search box -->
+                <form class="header__search" action="#" method="get">
+                    <i class="fas fa-search"></i>
                     <input type="search" placeholder="Buscar..." name="search">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-            </div>
 
-
-            <!-- icons -->
-            <div>
-                <div>
+                <!-- icons -->
+                <div class="header__icons">
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </a>
-                </div>
-                <div>
                     <a href="#">
                         <i class="fa-regular fa-user icon"></i>
                     </a>
-                </div>
-                <div>
                     <a href="#">
-                        <i class="fa-solid fa-bag-shopping icon"></i>
+                        <i class="fa-solid fa-cart-shopping icon"></i>
                     </a>
                 </div>
+
             </div>
+
+        </div>
+
         </div>
 
     </header>
@@ -129,7 +131,7 @@
 
     <!-- footer -->
 
-    <footer class="main-background">
+    <footer class="footer">
         <p class="text-footer">CODER - Todos los derechos reservados 2024</p>
     </footer>
 </body>

@@ -306,7 +306,7 @@ iframe {
 
 .footer {
   background-color: var(--primary-bg-color);
-  height: 71px;
+  height: auto;
   text-align: center;
   color: #ffffff;
   line-height: 3;
