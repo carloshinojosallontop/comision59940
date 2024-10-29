@@ -19,8 +19,8 @@
             <div class="header__logo">
                 <a href="">
                     <i class="fa-solid fa-bars icon"></i>
-                </a>                
-                <a href="./index.html">                    
+                </a>
+                <a href="./index.html">
                     <h1>CODER</h1>
                 </a>
             </div>
@@ -29,7 +29,7 @@
             <nav class="header__nav">
                 <ul>
                     <li>
-                        <a href="./pages/products.html">Productos<i class="fa-solid fa-chevron-down"></i></a>                        
+                        <a href="./pages/products.html">Productos<i class="fa-solid fa-chevron-down"></i></a>
                     </li>
                     <li>
                         <a href="./pages/about.html">Nosotros<i class="fa-solid fa-chevron-down"></i></a>
@@ -73,70 +73,93 @@
 
     </header>
 
-    <main class="container">
+    <main class="main-home container">
 
         <!-- carousel -->
         <section class="carousel">
-            <h3>La mas amplia variedad de Notebooks</h3>
-            <button>Ver mas</button>
+            <h3 class="carousel__title">La mas amplia variedad de Notebooks</h3>
+            <a class="carousel__btn" href="">Ver mas</a>
         </section>
 
         <!-- featured products -->
         <section class="featured-products">
-            <h2 class="title">Productos Destacados</h2>
-            <div>
+            <h2>Productos Destacados</h2>
+            <div class="card-grid">
                 <article class="card">
                     <img src="./img/iphone-16.jpg" alt="iphone 16" class="product-image">
-                    <p>Descripcion de producto</p>
-                    <span>$100</span>
+                    <a href="#">Descripcion de producto</a>
+                    <span>$100.00</span>
                 </article>
                 <article class="card">
                     <img src="./img/s24ultra.jpg" alt="iphone 16" class="product-image">
-                    <p>Descripcion de producto</p>
-                    <span>$100</span>
+                    <a href="#">Descripcion de producto</a>
+                    <span>$150.00</span>
                 </article>
                 <article class="card">
                     <img src="./img/LenovoLegion.jpg" alt="iphone 16" class="product-image">
-                    <p>Descripcion de producto</p>
-                    <span>$100</span>
+                    <a href="#">Descripcion de producto</a>
+                    <span>$200.00</span>
                 </article>
                 <article class="card">
                     <img src="./img/oled.jpg" alt="iphone 16" class="product-image">
-                    <p>Descripcion de producto</p>
-                    <span>$100</span>
+                    <a href="#">Descripcion de producto</a>
+                    <span>$120.00</span>
                 </article>
             </div>
         </section>
 
         <!-- featured categories -->
         <section class="featured-categories">
-            <h2 class="title">Categorias Principales</h2>
-            <div>
-                <h4>camaras</h4>
-                <img src="./img/category-pic1.jpg" alt="camaras" class="category-image">
-            </div>
-            <div>
-                <h4>celulares</h4>
-                <img src="./img/category-pic2.jpg" alt="celulares" class="category-image">
-            </div>
-            <div>
-                <h4>Laptops</h4>
-                <img src="./img/category-pic3.png" alt="laptops" class="category-image">
-            </div>
-            <div>
-                <h4>Videojuegos</h4>
-                <img src="./img/category-pic4.jpg" alt="videojuegos" class="category-image">
+            <h2>Categorias Principales</h2>
+            <div class="featured-categories__grid">
+                <div class="featured-categories__card">
+                    <img src="./img/category-pic1.jpg" alt="Camaras">
+                    <a href="#">
+                        <h4>Cámaras</h4>
+                    </a>
+                </div>
+                <div class="featured-categories__card">
+                    <img src="./img/category-pic2.jpg" alt="Celulares">
+                    <a class="category-image pic-2">
+                        <h4>Celulares</h4>
+                    </a>
+                </div>
+                <div class="featured-categories__card">
+                    <img src="./img/category-pic3.png" alt="Laptops">
+                    <a class="category-image pic-3">
+                        <h4>Laptops</h4>
+                    </a>
+                </div>
+                <div class="featured-categories__card">
+                    <img src="./img/category-pic4.jpg" alt="Videojuegos">
+                    <a class="category-image pic-4">
+                        <h4>Videojuegos</h4>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- featured brands -->
         <section class="featured-brands">
-            <h2 class="title">Nuestras Marcas</h2>
-            <img src="./img/jbl-logo.jpg" alt="jbl" class="brand-image">
-            <img src="./img/Apple-logo.jpg" alt="Apple" class="brand-image">
-            <img src="./img/samsung-logo.jpg" alt="samsung" class="brand-image">
-            <img src="./img/lenovo-logo.png" alt="lenovo" class="brand-image">
-            <img src="./img/hp-logo.png" alt="hp" class="brand-image">
+            <h2>Nuestras Marcas</h2>
+            <div class="brand-grid">
+                <a href="#" class="brand">
+                    <img src="./img/jbl-logo.png" alt="jbl" class="brand-image">
+                </a>
+                <a href="#" class="brand">
+                    <img src="./img/Apple-logo.png" alt="Apple" class="brand-image">
+                </a>
+                <a href="#" class="brand">
+                    <img src="./img/samsung-logo.png" alt="samsung" class="brand-image">
+                </a>
+                <a href="#" class="brand">
+                    <img src="./img/lenovo-logo.png" alt="lenovo" class="brand-image">
+                </a>
+                <a href="#" class="brand">
+                    <img src="./img/hp-logo.png" alt="hp" class="brand-image">
+                </a>
+            </div>
+
         </section>
 
     </main>
