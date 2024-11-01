@@ -12,7 +12,7 @@
 /* Reseteo de estilos */
 
 * {
-  padding: 0;
+  padding: 0; 
   margin: 0;
   box-sizing: border-box;
 }
@@ -26,10 +26,21 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 a {
@@ -42,7 +53,7 @@ li {
 
 .icon {
   font-size: 1.75rem;
-  margin: 0 10px 0 10px;
+  margin: 0 .625rem 0 .625rem;
 }
 
 /* Header */
@@ -51,7 +62,7 @@ li {
   background-color: var(--primary-bg-color);
 }
 
-.container {
+.custom__container {
   width: min(90%, 90rem);
   margin: 0 auto;
 }
@@ -83,12 +94,16 @@ li {
 
 .header__logo h1 {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
 }
 
 .header__nav ul {
   display: flex;
   align-items: center;
   gap: 1.875rem;
+  margin: 0;
+  padding: 0;
 }
 
 .header__nav a {
@@ -110,7 +125,7 @@ li {
   margin-left: 0.5rem;
 }
 
-.header-rigth {
+.header-right {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -133,7 +148,7 @@ li {
 
 .header__search i {
   color: #747474;
-  margin-right: 5px;
+  margin-right: .3125rem;
 }
 
 .header__search input {
@@ -144,7 +159,7 @@ li {
 }
 
 .header__search:focus-within {
-  border: 2px solid black;/
+  border: 2px solid black;
 }
 
 .header__icons {
@@ -174,7 +189,7 @@ li {
     display: inline;
   }
 
-  .header-rigth {
+  .header-right {
     width: auto;
   }
 
@@ -241,16 +256,15 @@ li {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto);
-  gap: 1.875rem 0px;
+  gap: 1.875rem 0;
   text-align: center;
 }
-
 
 /* Carousel */
 
 .carousel {
   width: 100%;
-  height: 494px;
+  height: 30.875rem;
   background: url(../img/slideshow.jpg);
   background-size: cover;
   background-position: center;
@@ -258,7 +272,7 @@ li {
   display: grid;
   grid-template-columns: 25% repeat(2, 1fr);
   grid-template-rows: 15% 25% 30% 15% 15%;
-  padding: 0 20px 0 20px;
+  padding: 0 1.25rem;
 }
 
 .carousel__title {
@@ -273,7 +287,7 @@ li {
   grid-area: 4 / 1 / 5 / 2;
   border: 3px solid black;
   background-color: transparent;
-  padding: 10px 40px;
+  padding: .625rem 2.5rem;
   border-radius: 10px;
   font-size: 1.125rem;
   font-weight: 700;
@@ -302,24 +316,24 @@ li {
 
   .carousel__btn {
     grid-area: 4 / 1 / 6 / 5;
-    font-size: 16px;
-    padding: 8px 35px;
+    font-size: 1rem;
+    padding: .5rem 2.1875rem;
   }
 
   .carousel {
-    height: 454px;
+    height: 28.375rem;
     grid-template-rows: 25% 15% 30% 15% 15%;
   }
 }
 
 @media (max-width:480px) {
   .carousel__btn {
-    font-size: 12px;
-    padding: 5px 25px;
+    font-size: .75rem;
+    padding: .3125rem 1.5625rem;
   }
 
   .carousel {
-    height: 394px;
+    height: 24.625rem;
   }
 }
 
@@ -432,32 +446,32 @@ li {
   justify-content: center;
   width: 15.625rem;
   height: 15.625rem;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 .featured-categories .pic1 {
-  background: url(../img/category-pic1.jpg);
+  background-image: url(../img/category-pic1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .featured-categories .pic2 {
-  background: url(../img/category-pic2.jpg);
+  background-image: url(../img/category-pic2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .featured-categories .pic3 {
-  background: url(../img/category-pic3.png);
+  background-image: url(../img/category-pic3.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .featured-categories .pic4 {
-  background: url(../img/category-pic4.jpg);
+  background-image: url(../img/category-pic4.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -685,7 +699,7 @@ li {
 }
 
 .contact__form div {
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
 }
 
 .contact__form label {
@@ -716,7 +730,7 @@ li {
 
 .contact__form button[type="submit"] {
   width: 100%;
-  padding: 12px;
+  padding: .75rem;
   background-color: #000000;
   border: none;
   border-radius: 7px;
