@@ -12,7 +12,7 @@
 /* Reseteo de estilos */
 
 * {
-  padding: 0; 
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -22,7 +22,6 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  background-color: #FFFFFF;
 }
 
 h1 {
@@ -60,7 +59,7 @@ li {
 /* Header */
 
 .header {
-  background-color: var(--primary-bg-color);
+  background-color: var(--primary-bg-color)
 }
 
 .custom__container {
@@ -69,12 +68,12 @@ li {
 }
 
 .header__container {
-  height: 10vh;
+  min-height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
-  gap: 4rem;
+  padding: 1.125rem 0;
 }
 
 .header__container a,
@@ -82,35 +81,41 @@ li {
   color: #FFFFFF;
 }
 
-.header__logo {
+.header-left {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 4rem;
 }
 
-.header__logo i {
-  display: none;
-  margin-right: 1.25rem;
+
+.header__icon-button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .header__logo h1 {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .header__nav ul {
   display: flex;
   align-items: center;
-  gap: 1.875rem;
+  gap: 1rem;
   margin: 0;
-  padding: 0;
+  padding: 0 1.25rem 0 0;
 }
 
 .header__nav a {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: .625rem 0;
 }
 
 .header__nav a:hover {
@@ -130,6 +135,7 @@ li {
   display: flex;
   justify-content: end;
   align-items: center;
+  align-content: center;
   gap: 1.5625rem;
   width: 35%;
 }
@@ -165,7 +171,8 @@ li {
 
 .header__icons {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__icons i {
@@ -180,7 +187,7 @@ li {
   display: none;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1200px) {
 
   .header__search {
     display: none;
@@ -190,16 +197,21 @@ li {
     display: inline;
   }
 
-  .header-right {
-    width: auto;
-  }
-
-  .header__container {
-    height: 4.6875rem;
-  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .header-left {
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    gap: 0 .625rem;
+  }
+
+  .header__nav ul {
+    align-items: start;
+    padding: 1.25rem 0;
+    gap: .3125rem;
+  }
 
   body {
     font-size: .875rem;
@@ -208,45 +220,37 @@ li {
   h1 {
     font-size: 2.25rem;
   }
-
-  .icon {
-    font-size: 1.5rem;
-  }
-
-  .header__nav ul {
-    gap: .9375rem;
-  }
-
+  
   .header__container {
-    gap: 1.875rem;
-  }
-}
-
-@media (max-width: 830px) {
-  .header__nav {
-    display: none;
+    align-items: start;
   }
 
-  .header__logo i {
-    display: inline;
-  }
-}
-
-@media (max-width: 576px) {
-  body {
-    font-size: .875rem;
+  .header__icons {
+    margin-top: .375rem;
   }
 
-  h1 {
-    font-size: 1.875rem;
   }
 
-  .icon {
-    font-size: 1.5rem;
+  @media (max-width: 768px) {
+    body {
+      font-size: .875rem;
+    }
+    .header__container {
+      padding: 1rem 0;
   }
 
-  .header__container {
-    height: 4.0625rem;
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .header-right i {
+      font-size: 1.375rem;
+    }
+    .header__container {
+      padding: .875rem 0;
   }
 }
 
@@ -447,7 +451,7 @@ li {
   justify-content: center;
   width: 15.625rem;
   height: 15.625rem;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .featured-categories .pic1 {
@@ -478,9 +482,9 @@ li {
   background-repeat: no-repeat;
 }
 
-.featured-categories__content a{
+.featured-categories__content a {
   font-size: 1.125rem;
-  color:#FFFFFF
+  color: #FFFFFF
 }
 
 @media (max-width:1272px) {
@@ -495,6 +499,7 @@ li {
     width: 13.125rem;
     height: 13.125rem;
   }
+
   .featured-categories__title h2 {
     font-size: 1.375rem;
   }
@@ -504,20 +509,20 @@ li {
   .featured-categories__card {
     width: 9.375rem;
     height: 9.375rem;
-  }  
+  }
 }
 
 @media (max-width:480px) {
   .featured-categories__card {
     width: 7.5rem;
     height: 7.5rem;
-  }  
-
-  .featured-categories__card h4 {  
-      font-size: 1rem;
-    }
-    
   }
+
+  .featured-categories__card h4 {
+    font-size: 1rem;
+  }
+
+}
 
 /* Featured brands */
 
@@ -564,6 +569,7 @@ li {
   .cards {
     column-gap: 1.25rem;
   }
+
   .brand__card img {
     width: 10rem;
     height: 5rem;
