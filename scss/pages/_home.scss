@@ -30,7 +30,7 @@
             .carousel__btn {
                 display: block;
                 grid-area: 4 / 1 / 5 / 2;
-                border: 3px solid #000000;
+                border: 3px solid map-get($colors , primaryBordercolor);
                 background-color: transparent;
                 padding: .625rem 2.5rem;
                 border-radius: 10px;
@@ -38,10 +38,11 @@
                 font-weight: 700;
                 align-self: center;
                 justify-self: center;
-                color: #000000;
+                color: map-get($colors, primaryTextcolor);
 
                 &:hover {
-                    background-color: #FFFFFF;
+                    background-color: map-get($colors, secundaryBtnBgcolor );
+                    text-decoration: none;
                 }
             }
         }
@@ -115,7 +116,7 @@
                 .card {
                     @include flex-advance (column, nowrap, center, center, stretch, .625rem);
                     padding: .9375rem;
-                    border: 1px solid #FFFFFF;
+                    border: 1px solid $color-tertiary;
                     text-align: center;
 
                     .product-image {
@@ -127,7 +128,7 @@
 
                     a {
                         display: block;
-                        color: #000000;
+                        color: $color-secundary;
 
                         &:hover {
                             text-decoration: underline;
@@ -141,7 +142,7 @@
                     }
 
                     &:hover {
-                        border: 1px solid #000000;
+                        border: 1px solid $color-secundary;
                         border-radius: 5px;
                         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
                     }
@@ -228,17 +229,15 @@
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
-            background-color: $secundaryBgcolor;
+            background-color: map-get($colors, secundaryBgcolor );
             padding: 2.1875rem;
 
             .featured-categories__content {
                 @include flex-advance (row, wrap, space-between, center, stretch, 1.25rem);
-                display: flex;
-                color: $secundaryTextcolor;
 
                 a {
                     font-size: 1.125rem;
-                    color: $secundaryTextcolor;
+                    color: map-get($colors, secundaryTextcolor);
                 }
 
                 .featured-categories__card {
@@ -367,7 +366,7 @@
                 a {
                     display: block;
                     padding: 1.25rem;
-                    background-color: #f2f2f2;
+                    background-color: map-get($colors, tertiaryBgcolor);
                     border-radius: 10px;
 
                     img {

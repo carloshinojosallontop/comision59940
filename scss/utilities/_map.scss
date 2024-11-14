@@ -1,7 +1,17 @@
+// Mapa de colores
+
 $colors: (
-  primary: $primaryBgcolor,
-  secundary: $secundaryBgcolor,
-  tertiary: $tertiaryBgcolor,
-  blackcolor: $primaryTextcolor,
-  whitecolor: $secundaryTextcolor
+primaryBgcolor: $color-primary,
+secundaryBgcolor: $color-gray,
+tertiaryBgcolor: $color-smoke,
+primaryTextcolor:  $color-secundary,
+secundaryTextcolor: $color-tertiary,
+primaryBordercolor: $color-secundary,
+secundaryBordercolor: $color-lightgray,
+primaryLinkHovercolor: $color-tertiary,
+secundaryLinkHovercolor: $color-secundary,
+primaryHovercolor: $color-secundary,
+secundaryHovercolor: $color-charcoalgray,
+primaryBtnBgcolor: $color-secundary,
+secundaryBtnBgcolor: $color-tertiary
 );
