@@ -1,6 +1,6 @@
 /* header */ 
 header {
-    background-color: $primaryBgcolor;
+    background-color: #7A163C;
 
     .custom__container {
         width: min(90%, 90rem);
@@ -9,15 +9,13 @@ header {
 
     .header__container {
         min-height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-simple (space-between, center);
         font-weight: 700;
         padding: 1.125rem 0;
 
         a,
         i {
-            color: $secundaryTextcolor;
+            color: #FFFFFF;
         }
 
         .header-left {
@@ -28,9 +26,7 @@ header {
 
             .header__icon-button {
                 i {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-simple (center, center);
                 }
             }
 
@@ -45,8 +41,7 @@ header {
 
             .header__nav {
                 ul {
-                    display: flex;
-                    align-items: center;
+                    @include flex-simple (flex-start, center); 
                     gap: 1rem;
                     margin: 0;
                     padding: 0 1.25rem 0 0;
@@ -77,16 +72,11 @@ header {
         }
 
         .header-right {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            align-content: center;
-            gap: 1.5625rem;
+            @include flex-advance (row, nowrap, end, center, center, 1.5625rem);
             width: 35%;
 
             .header__search {
-                display: flex;
-                align-items: center;
+                @include flex-simple (flex-start,center);
                 border: 1px solid #ddd;
                 border-radius: 5px;
                 padding: 0 10px;
@@ -109,15 +99,13 @@ header {
                 }
 
                 &:focus-within {
-                    border: 2px solid black;
+                    border: 2px solid #000000;
                 }
 
             }
 
             .header__icons {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-simple (center, center);
 
                 a {
                     &:nth-child(1) {

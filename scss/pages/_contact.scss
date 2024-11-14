@@ -4,11 +4,7 @@
     .contact {
         min-height: 82vh;
         padding: 3.125rem 0;
-        display: grid;
-        grid-template-columns: 1fr 60%;
-        grid-template-areas: "contact form";
-        column-gap: 3.125rem;
-        align-items: start;
+        @include grid-advance (1fr 60%, none, "contact form", start, 0 3.125rem);
 
         .contact__text {
             grid-area: contact;

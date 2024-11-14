@@ -7,10 +7,7 @@
     .home {
         min-height: 82vh;
         margin: 1.25rem 0;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(4, auto);
-        gap: 1.875rem 0;
+        @include grid-simple (100%, repeat(4, auto), 1.875rem 0);
         text-align: center;
 
         .carousel {
@@ -20,9 +17,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            display: grid;
-            grid-template-columns: 25% repeat(2, 1fr);
-            grid-template-rows: 15% 25% 30% 15% 15%;
+            @include grid-simple (25% repeat(2, 1fr), 15% 25% 30% 15% 15%, 0 1.25rem);
             padding: 0 1.25rem;
 
             .carousel__title {
@@ -35,7 +30,7 @@
             .carousel__btn {
                 display: block;
                 grid-area: 4 / 1 / 5 / 2;
-                border: 3px solid black;
+                border: 3px solid #000000;
                 background-color: transparent;
                 padding: .625rem 2.5rem;
                 border-radius: 10px;
@@ -46,7 +41,7 @@
                 color: #000000;
 
                 &:hover {
-                    background-color: white;
+                    background-color: #FFFFFF;
                 }
             }
         }
@@ -110,23 +105,15 @@
 .custom__container {
     .home {
         .featured-products {
-            display: grid;
-            grid-template-rows: repeat(2, auto);
-            gap: 1.25rem;
+            @include grid-simple (none, repeat(2, auto), 1.25rem);
             font-size: 1.125rem;
             padding: 1.25rem 0;
 
             .card-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: .9375rem;
+                @include grid-simple (repeat(4, 1fr), none, .9375rem);
 
                 .card {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: .625rem;
+                    @include flex-advance (column, nowrap, center, center, stretch, .625rem);
                     padding: .9375rem;
                     border: 1px solid #FFFFFF;
                     text-align: center;
@@ -245,11 +232,8 @@
             padding: 2.1875rem;
 
             .featured-categories__content {
+                @include flex-advance (row, wrap, space-between, center, stretch, 1.25rem);
                 display: flex;
-                flex-wrap: wrap;
-                gap: 1.25rem;
-                align-items: center;
-                justify-content: space-between;
                 color: $secundaryTextcolor;
 
                 a {
@@ -258,9 +242,7 @@
                 }
 
                 .featured-categories__card {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-simple (center,center);
                     width: 15.625rem;
                     height: 15.625rem;
                     border-radius: 50%;
@@ -318,6 +300,11 @@
                     .featured-categories__card {
                         width: 13.125rem;
                         height: 13.125rem;
+                        a {
+                            h4 {
+                                font-size: 1.25rem;
+                            }
+                        }
                     }
                 }
             }
@@ -333,6 +320,11 @@
                     .featured-categories__card {
                         width: 9.375rem;
                         height: 9.375rem;
+                        a {
+                            h4 {
+                                font-size: 1.125rem;
+                            }
+                        }
                     }
                 }
             }
@@ -370,11 +362,7 @@
             gap: 1.25rem;
 
             .brands__logo {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                gap: 1.25rem;
+                @include flex-advance (row, wrap, space-between, center, stretch, 1.25rem);
 
                 a {
                     display: block;

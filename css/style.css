@@ -63,7 +63,7 @@ header .header__container {
 }
 header .header__container a,
 header .header__container i {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 header .header__container .header-left {
   display: flex;
@@ -73,8 +73,8 @@ header .header__container .header-left {
 }
 header .header__container .header-left .header__icon-button i {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 header .header__container .header-left .header__logo {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -85,6 +85,7 @@ header .header__container .header-left .header__logo h1 {
 }
 header .header__container .header-left .header__nav ul {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   margin: 0;
@@ -107,6 +108,8 @@ header .header__container .header-left .header__nav ul li a:hover i {
 }
 header .header__container .header-right {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: end;
   align-items: center;
   align-content: center;
@@ -115,6 +118,7 @@ header .header__container .header-right {
 }
 header .header__container .header-right .header__search {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -136,7 +140,7 @@ header .header__container .header-right .header__search input {
   font-size: 0.875rem;
 }
 header .header__container .header-right .header__search:focus-within {
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 header .header__container .header-right .header__icons {
   display: flex;
@@ -243,6 +247,7 @@ header .header__container .header-right .header__icons a i:hover {
   display: grid;
   grid-template-columns: 25% repeat(2, 1fr);
   grid-template-rows: 15% 25% 30% 15% 15%;
+  gap: 0 1.25rem;
   padding: 0 1.25rem;
 }
 .custom__container .home .carousel .carousel__title {
@@ -254,7 +259,7 @@ header .header__container .header-right .header__icons a i:hover {
 .custom__container .home .carousel .carousel__btn {
   display: block;
   grid-area: 4/1/5/2;
-  border: 3px solid black;
+  border: 3px solid #000000;
   background-color: transparent;
   padding: 0.625rem 2.5rem;
   border-radius: 10px;
@@ -265,7 +270,7 @@ header .header__container .header-right .header__icons a i:hover {
   color: #000000;
 }
 .custom__container .home .carousel .carousel__btn:hover {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 @media (max-width: 1044px) {
@@ -302,6 +307,7 @@ header .header__container .header-right .header__icons a i:hover {
 /* Featured products */
 .custom__container .home .featured-products {
   display: grid;
+  grid-template-columns: none;
   grid-template-rows: repeat(2, auto);
   gap: 1.25rem;
   font-size: 1.125rem;
@@ -310,13 +316,16 @@ header .header__container .header-right .header__icons a i:hover {
 .custom__container .home .featured-products .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
   gap: 0.9375rem;
 }
 .custom__container .home .featured-products .card-grid .card {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  align-content: stretch;
   gap: 0.625rem;
   padding: 0.9375rem;
   border: 1px solid #FFFFFF;
@@ -392,10 +401,13 @@ header .header__container .header-right .header__icons a i:hover {
 }
 .custom__container .home .featured-categories .featured-categories__content {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  gap: 1.25rem;
+  display: flex;
   color: #ffffff;
 }
 .custom__container .home .featured-categories .featured-categories__content a {
@@ -404,8 +416,8 @@ header .header__container .header-right .header__icons a i:hover {
 }
 .custom__container .home .featured-categories .featured-categories__content .featured-categories__card {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 15.625rem;
   height: 15.625rem;
   border-radius: 50%;
@@ -440,11 +452,17 @@ header .header__container .header-right .header__icons a i:hover {
     width: 13.125rem;
     height: 13.125rem;
   }
+  .custom__container .home .featured-categories .featured-categories__content .featured-categories__card a h4 {
+    font-size: 1.25rem;
+  }
 }
 @media (max-width: 580px) {
   .custom__container .home .featured-categories .featured-categories__content .featured-categories__card {
     width: 9.375rem;
     height: 9.375rem;
+  }
+  .custom__container .home .featured-categories .featured-categories__content .featured-categories__card a h4 {
+    font-size: 1.125rem;
   }
 }
 @media (max-width: 480px) {
@@ -464,9 +482,11 @@ header .header__container .header-right .header__icons a i:hover {
 }
 .custom__container .home .brands .brands__logo {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  align-content: stretch;
   gap: 1.25rem;
 }
 .custom__container .home .brands .brands__logo a {
@@ -518,9 +538,10 @@ header .header__container .header-right .header__icons a i:hover {
   padding: 3.125rem 0;
   display: grid;
   grid-template-columns: 1fr 60%;
+  grid-template-rows: none;
   grid-template-areas: "text map";
-  column-gap: 3.125rem;
   align-items: start;
+  gap: 0 3.125rem;
 }
 .custom__container .locations .locations__text {
   grid-area: text;
@@ -573,9 +594,10 @@ header .header__container .header-right .header__icons a i:hover {
   padding: 3.125rem 0;
   display: grid;
   grid-template-columns: 1fr 60%;
+  grid-template-rows: none;
   grid-template-areas: "contact form";
-  column-gap: 3.125rem;
   align-items: start;
+  gap: 0 3.125rem;
 }
 .custom__container .contact .contact__text {
   grid-area: contact;
@@ -656,9 +678,10 @@ header .header__container .header-right .header__icons a i:hover {
   padding: 3.125rem 0;
   display: grid;
   grid-template-columns: 1fr 60%;
+  grid-template-rows: none;
   grid-template-areas: "about image";
-  column-gap: 3.125rem;
   align-items: start;
+  gap: 0 3.125rem;
 }
 .custom__container .about .about__text {
   grid-area: about;
@@ -698,11 +721,13 @@ header .header__container .header-right .header__icons a i:hover {
     font-size: 0.75rem;
   }
 }
+/* products */
 .custom__container .products {
   min-height: 82vh;
   padding: 3.125rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
   gap: 1.25rem 1.875rem;
   justify-items: center;
 }
@@ -712,8 +737,10 @@ header .header__container .header-right .header__icons a i:hover {
 .custom__container .products .card {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  align-content: stretch;
   gap: 0.625rem;
   padding: 0.9375rem;
   border: 1px solid #FFFFFF;
