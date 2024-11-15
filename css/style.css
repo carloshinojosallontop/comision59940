@@ -286,7 +286,7 @@ header .header__container .header-right .header__icons a i:hover {
     grid-template-rows: 25% 15% 30% 15% 15%;
   }
   .custom__container .home .carousel .carousel__title {
-    font-size: 1.5625rem;
+    font-size: 1.4375rem;
     grid-area: 1/1/2/4;
     align-self: center;
   }
