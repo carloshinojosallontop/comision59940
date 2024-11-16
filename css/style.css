@@ -812,7 +812,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .products .products__title h2 {
     font-size: 1.5rem;
   }
-  .custom__container .products .card .product__image {
+  .custom__container .products .card .product__image img {
     width: 11.875rem;
   }
   .custom__container .products .card span {
@@ -823,7 +823,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .products .products__title h2 {
     font-size: 1.375rem;
   }
-  .custom__container .products .card .product__image {
+  .custom__container .products .card .product__image img {
     width: 8.75rem;
   }
   .custom__container .products .card span {
