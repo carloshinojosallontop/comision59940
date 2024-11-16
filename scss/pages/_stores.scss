@@ -13,7 +13,7 @@
             }
 
             .locations__info {
-                padding-bottom: 1.875rem;
+                @extend .locations__text;
                 text-align: justify;
 
             }

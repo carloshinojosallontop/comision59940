@@ -15,7 +15,7 @@
             }
 
             .about__info {
-                padding-bottom: 1.875rem;
+                @extend .about__title;
                 text-align: justify;
             }
         }

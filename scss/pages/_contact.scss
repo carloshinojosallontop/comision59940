@@ -14,7 +14,7 @@
             }
 
             .contact__info {
-                padding-bottom: 1.875rem;
+                @extend .contact__title;
                 text-align: justify;
             }
         }

@@ -542,14 +542,13 @@ header .header__container .header-right .header__icons a i:hover {
   align-items: start;
   gap: 0 3.125rem;
 }
-.custom__container .locations .locations__text {
+.custom__container .locations .locations__text, .custom__container .locations .locations__text .locations__info {
   grid-area: text;
 }
 .custom__container .locations .locations__text .locations__title {
   padding-bottom: 1.875rem;
 }
 .custom__container .locations .locations__text .locations__info {
-  padding-bottom: 1.875rem;
   text-align: justify;
 }
 .custom__container .locations .locations__map {
@@ -565,7 +564,7 @@ header .header__container .header-right .header__icons a i:hover {
     grid-template-columns: 100%;
     grid-template-areas: "text" "map";
   }
-  .custom__container .locations .locations__text {
+  .custom__container .locations .locations__text, .custom__container .locations .locations__text .locations__info {
     padding-bottom: 2%;
   }
   .custom__container .locations .locations__text .locations__title {
@@ -601,11 +600,10 @@ header .header__container .header-right .header__icons a i:hover {
 .custom__container .contact .contact__text {
   grid-area: contact;
 }
-.custom__container .contact .contact__text .contact__title {
+.custom__container .contact .contact__text .contact__title, .custom__container .contact .contact__text .contact__info {
   padding-bottom: 1.875rem;
 }
 .custom__container .contact .contact__text .contact__info {
-  padding-bottom: 1.875rem;
   text-align: justify;
 }
 .custom__container .contact .contact__form {
@@ -667,7 +665,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .contact .contact__text {
     padding-bottom: 2%;
   }
-  .custom__container .contact .contact__text .contact__title {
+  .custom__container .contact .contact__text .contact__title, .custom__container .contact .contact__text .contact__info {
     text-align: center;
   }
 }
@@ -685,11 +683,10 @@ header .header__container .header-right .header__icons a i:hover {
 .custom__container .about .about__text {
   grid-area: about;
 }
-.custom__container .about .about__text .about__title {
+.custom__container .about .about__text .about__title, .custom__container .about .about__text .about__info {
   padding-bottom: 1.875rem;
 }
 .custom__container .about .about__text .about__info {
-  padding-bottom: 1.875rem;
   text-align: justify;
 }
 .custom__container .about .about__image img {
@@ -708,12 +705,12 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .about .about__text {
     padding-bottom: 2%;
   }
-  .custom__container .about .about__text .about__title {
+  .custom__container .about .about__text .about__title, .custom__container .about .about__text .about__info {
     text-align: center;
   }
 }
 @media (max-width: 576px) {
-  .custom__container .about .about__text .about__title {
+  .custom__container .about .about__text .about__title, .custom__container .about .about__text .about__info {
     font-size: 1.25rem;
   }
   .custom__container .about .about__text .about__info {
