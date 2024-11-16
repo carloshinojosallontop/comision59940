@@ -305,7 +305,7 @@ header .header__container .header-right .header__icons a i:hover {
     padding: 0.3125rem 1.5625rem;
   }
 }
-/* Featured products */
+/* featured products */
 .custom__container .home .featured-products {
   display: grid;
   grid-template-columns: none;
@@ -332,28 +332,28 @@ header .header__container .header-right .header__icons a i:hover {
   border: 1px solid #FFFFFF;
   text-align: center;
 }
-.custom__container .home .featured-products .card-grid .card .product-image {
+.custom__container .home .featured-products .card-grid .card:hover {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.custom__container .home .featured-products .card-grid .card .product__image img {
   width: 220px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-.custom__container .home .featured-products .card-grid .card a {
+.custom__container .home .featured-products .card-grid .card .product__description {
   display: block;
   color: #000000;
 }
-.custom__container .home .featured-products .card-grid .card a:hover {
+.custom__container .home .featured-products .card-grid .card .product__description:hover {
   text-decoration: underline;
   font-weight: 700;
 }
 .custom__container .home .featured-products .card-grid .card span {
   font-size: 1.25rem;
   font-weight: 700;
-}
-.custom__container .home .featured-products .card-grid .card:hover {
-  border: 1px solid #000000;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1044px) {
@@ -371,7 +371,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .home .featured-products .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .custom__container .home .featured-products .card-grid .card .product-image {
+  .custom__container .home .featured-products .card-grid .card .product-image img {
     width: 190px;
   }
   .custom__container .home .featured-products .card-grid .card span {
@@ -385,7 +385,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .home .featured-products h2 {
     font-size: 1.375rem;
   }
-  .custom__container .home .featured-products .card-grid .card .product-image {
+  .custom__container .home .featured-products .card-grid .card .product-image img {
     width: 140px;
   }
   .custom__container .home .featured-products .card-grid .card span {
@@ -745,7 +745,7 @@ header .header__container .header-right .header__icons a i:hover {
   border: 1px solid #FFFFFF;
   text-align: center;
 }
-.custom__container .products .card .product-image {
+.custom__container .products .card .product__image img {
   width: 220px;
   height: auto;
   display: block;
@@ -762,8 +762,8 @@ header .header__container .header-right .header__icons a i:hover {
   color: #000000;
 }
 .custom__container .products .card .product__description:hover {
-  font-weight: 700;
   color: #000000;
+  font-weight: 700;
   text-decoration: underline;
 }
 .custom__container .products .card span {

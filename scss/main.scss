@@ -3,6 +3,10 @@
 @import 'utilities/mixins';
 @import 'utilities/map';
 
+//components
+@import 'components/button';
+@import 'components/card';
+
 //base
 @import 'base/fonts';
 @import 'base/reset';

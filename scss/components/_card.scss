@@ -1,0 +1,49 @@
+// product cartegory page cards
+
+@mixin product-card-category {
+    .card {
+        @include flex-advance (column, nowrap, center, center, stretch, .625rem);
+        padding: .9375rem;
+        border: 1px solid $color-tertiary;
+        text-align: center;
+
+        .product__image img {
+            width: 220px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .product__description {
+            display: block;
+            color: map-get($colors, primaryTextcolor);
+
+            &:link {
+                color: $color-secundary;
+            }
+
+            &:visited {
+                color: $color-secundary;
+            }
+
+            &:hover {
+                color: $color-secundary;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        @include btn-Add-category;
+
+        &:hover {
+            border: 1px solid $color-secundary;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

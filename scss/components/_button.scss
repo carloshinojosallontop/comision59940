@@ -1,0 +1,23 @@
+// button add to cart category page
+
+@mixin btn-Add-category {
+                .product__btn {
+                    padding: .3125rem .625rem;
+                    border: 2px solid $color-secundary;
+                    border-radius: 7px;
+
+                    &:link {
+                        color: $color-secundary;
+                    }
+
+                    &:visited {
+                        color: $color-secundary;
+                    }
+
+                    &:hover {
+                        background-color: $color-secundary;
+                        color: $color-tertiary;
+                        text-decoration: none;
+                    }
+                }
+            }
