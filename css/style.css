@@ -371,7 +371,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .home .featured-products .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .custom__container .home .featured-products .card-grid .card .product-image img {
+  .custom__container .home .featured-products .card-grid .card .product__image img {
     width: 190px;
   }
   .custom__container .home .featured-products .card-grid .card span {
@@ -385,7 +385,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .home .featured-products h2 {
     font-size: 1.375rem;
   }
-  .custom__container .home .featured-products .card-grid .card .product-image img {
+  .custom__container .home .featured-products .card-grid .card .product__image img {
     width: 140px;
   }
   .custom__container .home .featured-products .card-grid .card span {
@@ -812,7 +812,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .products .products__title h2 {
     font-size: 1.5rem;
   }
-  .custom__container .products .card .product-image {
+  .custom__container .products .card .product__image {
     width: 11.875rem;
   }
   .custom__container .products .card span {
@@ -823,7 +823,7 @@ header .header__container .header-right .header__icons a i:hover {
   .custom__container .products .products__title h2 {
     font-size: 1.375rem;
   }
-  .custom__container .products .card .product-image {
+  .custom__container .products .card .product__image {
     width: 8.75rem;
   }
   .custom__container .products .card span {
