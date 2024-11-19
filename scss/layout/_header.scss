@@ -1,6 +1,10 @@
 /* header */ 
 header {
     background-color: map-get($colors, primaryBgcolor);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
 
     .custom__container {
         width: min(90%, 90rem);
@@ -32,6 +36,7 @@ header {
 
             .header__logo {
                 text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                text-decoration: none;
 
                 h1 {
                     padding: 0;

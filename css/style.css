@@ -48,6 +48,10 @@ li {
 /* header */
 header {
   background-color: #7A163C;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
 }
 header .custom__container {
   width: min(90%, 90rem);
@@ -78,6 +82,7 @@ header .header__container .header-left .header__icon-button i {
 }
 header .header__container .header-left .header__logo {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 header .header__container .header-left .header__logo h1 {
   padding: 0;
@@ -230,7 +235,7 @@ header .header__container .header-right .header__icons a i:hover {
 }
 .custom__container .home {
   min-height: 82vh;
-  margin: 1.25rem 0;
+  margin: 6.5rem 0;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto);
