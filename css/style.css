@@ -11,6 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  background-color: #FFFFFF;
 }
 
 h1 {
@@ -260,6 +261,7 @@ header .header__container .header-right .header__icons a i:hover {
   grid-area: 2/1/3/2;
   font-size: 1.875rem;
   text-align: left;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.829);
 }
 .custom__container .home .carousel .carousel__btn {
   display: block;
