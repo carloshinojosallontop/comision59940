@@ -1,7 +1,7 @@
 /* footer */
 .footer {
     background-color: map-get($colors, primaryBgcolor);
-    height: 8vh;
+    height: 10vh;
     color: map-get($colors, secundaryTextcolor);
     @include flex-simple (center, center);
 

@@ -6,7 +6,7 @@
 
     .home {
         min-height: 82vh;
-        margin: 6.5rem 0;
+        margin-top: 6.5rem;
         @include grid-simple (100%, repeat(4, auto), 1.875rem 0);
         text-align: center;
 
@@ -249,21 +249,33 @@
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
+                    &:hover {
+                    transform: scale(1.1);
+                    transition: 4s;
+                    }
                 }
 
                 .pic1 {
                     background-image: url(../img/category-pic1.jpg);
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
                 }
 
                 .pic2 {
+                    @extend .pic1;
                     background-image: url(../img/category-pic2.jpg);
                 }
 
                 .pic3 {
+                    @extend .pic1;
                     background-image: url(../img/category-pic3.png);
                 }
 
                 .pic4 {
+                    @extend .pic1;
                     background-image: url(../img/category-pic4.jpg);
                 }
             }
@@ -360,6 +372,8 @@
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
+            padding-top: 1.25rem;
+            padding-bottom: 2.5rem;
 
             .brands__logo {
                 @include flex-advance (row, wrap, space-between, center, stretch, 1.25rem);
