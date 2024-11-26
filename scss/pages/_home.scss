@@ -236,47 +236,61 @@
             .featured-categories__content {
                 @include flex-advance (row, wrap, space-between, center, stretch, 1.25rem);
 
-                a {
-                    font-size: 1.125rem;
-                    color: map-get($colors, secundaryTextcolor);
-                }
-
                 .featured-categories__card {
                     @include flex-simple (center,center);
+                    position: relative;
+                    overflow: hidden;
                     width: 15.625rem;
                     height: 15.625rem;
                     border-radius: 50%;
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    &:hover {
-                    transform: scale(1.1);
-                    transition: 4s;
-                    }
                 }
 
                 .pic1 {
-                    background-image: url(../img/category-pic1.jpg);
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(../img/category-pic1.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        transition: transform 4s ease;
+                        z-index: 0;
+                    }
+                    &:hover::before {
+                        transform: scale(1.1);
+                    }
                     a {
-                        &:hover {
-                            text-decoration: none;
-                        }
+                        color: map-get($colors, secundaryTextcolor);
+                        font-size: 1.125rem;
+                        position: relative;
+                        z-index: 1;
+                        text-decoration: none;
                     }
                 }
 
                 .pic2 {
                     @extend .pic1;
-                    background-image: url(../img/category-pic2.jpg);
+                    &::before {
+                        background-image: url(../img/category-pic2.jpg);
+                    }
                 }
 
                 .pic3 {
                     @extend .pic1;
+                    &::before {
                     background-image: url(../img/category-pic3.png);
+                    }
                 }
 
                 .pic4 {
                     @extend .pic1;
+                    &::before {
                     background-image: url(../img/category-pic4.jpg);
+                    }
                 }
             }
         }
@@ -388,9 +402,9 @@
                         width: 11.25rem;
                         height: 6.25rem;
                         object-fit: contain;
-
+                        transition: transform 1.5s;
                         &:hover {
-                            transform: scale(1.1);
+                            transform: scale(1.1);                            
                         }
                     }
                 }

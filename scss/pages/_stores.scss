@@ -5,6 +5,7 @@
         padding: 3.125rem 0;
         margin-top: 5.25rem;
         @include grid-advance (1fr 60%, none, "text map", start, 0 3.125rem);
+        align-content: center;
 
         .locations__text {
             grid-area: text;
@@ -16,7 +17,6 @@
             .locations__info {
                 @extend .locations__text;
                 text-align: justify;
-
             }
         }
 

@@ -416,38 +416,47 @@ header .header__container .header-right .header__icons a i:hover {
   align-content: stretch;
   gap: 1.25rem;
 }
-.custom__container .home .featured-categories .featured-categories__content a {
-  font-size: 1.125rem;
-  color: #FFFFFF;
-}
 .custom__container .home .featured-categories .featured-categories__content .featured-categories__card {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   width: 15.625rem;
   height: 15.625rem;
   border-radius: 50%;
+}
+.custom__container .home .featured-categories .featured-categories__content .pic1::before, .custom__container .home .featured-categories .featured-categories__content .pic4::before, .custom__container .home .featured-categories .featured-categories__content .pic3::before, .custom__container .home .featured-categories .featured-categories__content .pic2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/category-pic1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: transform 4s ease;
+  z-index: 0;
 }
-.custom__container .home .featured-categories .featured-categories__content .featured-categories__card:hover {
+.custom__container .home .featured-categories .featured-categories__content .pic1:hover::before, .custom__container .home .featured-categories .featured-categories__content .pic4:hover::before, .custom__container .home .featured-categories .featured-categories__content .pic3:hover::before, .custom__container .home .featured-categories .featured-categories__content .pic2:hover::before {
   transform: scale(1.1);
-  transition: 4s;
 }
-.custom__container .home .featured-categories .featured-categories__content .pic1, .custom__container .home .featured-categories .featured-categories__content .pic4, .custom__container .home .featured-categories .featured-categories__content .pic3, .custom__container .home .featured-categories .featured-categories__content .pic2 {
-  background-image: url(../img/category-pic1.jpg);
-}
-.custom__container .home .featured-categories .featured-categories__content .pic1 a:hover, .custom__container .home .featured-categories .featured-categories__content .pic4 a:hover, .custom__container .home .featured-categories .featured-categories__content .pic3 a:hover, .custom__container .home .featured-categories .featured-categories__content .pic2 a:hover {
+.custom__container .home .featured-categories .featured-categories__content .pic1 a, .custom__container .home .featured-categories .featured-categories__content .pic4 a, .custom__container .home .featured-categories .featured-categories__content .pic3 a, .custom__container .home .featured-categories .featured-categories__content .pic2 a {
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  position: relative;
+  z-index: 1;
   text-decoration: none;
 }
-.custom__container .home .featured-categories .featured-categories__content .pic2 {
+.custom__container .home .featured-categories .featured-categories__content .pic2::before {
   background-image: url(../img/category-pic2.jpg);
 }
-.custom__container .home .featured-categories .featured-categories__content .pic3 {
+.custom__container .home .featured-categories .featured-categories__content .pic3::before {
   background-image: url(../img/category-pic3.png);
 }
-.custom__container .home .featured-categories .featured-categories__content .pic4 {
+.custom__container .home .featured-categories .featured-categories__content .pic4::before {
   background-image: url(../img/category-pic4.jpg);
 }
 
@@ -514,6 +523,7 @@ header .header__container .header-right .header__icons a i:hover {
   width: 11.25rem;
   height: 6.25rem;
   object-fit: contain;
+  transition: transform 1.5s;
 }
 .custom__container .home .brands .brands__logo a img:hover {
   transform: scale(1.1);
@@ -558,6 +568,7 @@ header .header__container .header-right .header__icons a i:hover {
   grid-template-areas: "text map";
   align-items: start;
   gap: 0 3.125rem;
+  align-content: center;
 }
 .custom__container .locations .locations__text, .custom__container .locations .locations__text .locations__info {
   grid-area: text;
@@ -614,6 +625,7 @@ header .header__container .header-right .header__icons a i:hover {
   grid-template-areas: "contact form";
   align-items: start;
   gap: 0 3.125rem;
+  align-content: center;
 }
 .custom__container .contact .contact__text {
   grid-area: contact;
@@ -698,6 +710,7 @@ header .header__container .header-right .header__icons a i:hover {
   grid-template-areas: "about image";
   align-items: start;
   gap: 0 3.125rem;
+  align-content: center;
 }
 .custom__container .about .about__text {
   grid-area: about;
